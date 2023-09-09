@@ -9,55 +9,41 @@
     <link rel="icon" href="favicon.ico" type="img/x-icon" />
   </head>
   <body>
-    <header>
-      <h1>welcome to little taco shop</h1>
-      <nav>
-        <ul>
+    <header class="header">
+      <h1 class="header__h1">welcome to little taco shop</h1>
+      <nav class="header__nav">
+        <ul class="header__ul">
           <li>
-            <a href="#about"
-              >about <abbr title="the little taco shop">LTS</abbr></a
-            >
+            <a href="#menu"> menu </a>
           </li>
           <li>
-            <a href="#menu">our menu </a>
-          </li>
-          <li>
-            <a href="hours.html">store hours</a>
+            <a href="hours.html"> hours</a>
           </li>
           <li>
             <a href="contact.html">contact us</a>
           </li>
+          <li>
+            <a href="about.html">about</a>
+          </li>
         </ul>
       </nav>
+    </header>
+    <section class="hero">
+      <h2 class="hero__h2">Bienvenidos</h2>
       <figure>
         <img
-          src="img/tacos_and_drink_400x267.png"
+          src="img/tacos_close_up_1000x649.png"
           alt="drink"
           title="we love tacos"
-          width="400"
-          height="267"
+          width="1000"
+          height="667"
         />
-        <figcaption>tacos and drink</figcaption>
+        <figcaption class="offscreen">tacos and drink</figcaption>
       </figure>
-    </header>
-    <main>
-      <article id="about">
-        <h2>About <abbr title="the little taco shop">LTS</abbr></h2>
-        <p>
-          <abbr title="the little taco shop">LTS</abbr>
-          was founded in <time datetime="2022">2022</time> was built from tacos
-          <strong>Tacos</strong>
-        </p>
-        <aside>
-          <h3>taco trivia</h3>
-        </aside>
-        <details>
-          <summary>when did taco first appear in the US</summary>
-          <p>1905 jeffery m pilcher, taco historian and professor</p>
-        </details>
-      </article>
+    </section>
+    <main class="main">
       <hr />
-      <article id="menu">
+      <article id="menu" class="main__article">
         <h2>our menu</h2>
         <table>
           <caption>
@@ -111,8 +97,11 @@
       </article>
     </main>
     <hr />
-    <footer>
-      <p>copyright &copy;</p>
+    <footer class="footer">
+      <p>
+        <span class="nowrap">copyright &copy;</span>
+        <span class="nowrap">little taco shop</span>
+      </p>
     </footer>
   </body>
 </html>
